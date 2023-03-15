@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="55eda5961b69a910a477a8e5604bcb19" label="Task List" max_length="40" name="x_986659_todo_list_task_list" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="due date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="complete" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="complete" value="complete"/>
+                <element inactive_on_update="false" label="incomplete" value="incomplete"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="task description" mandatory="true" max_length="100" name="task_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="task name" mandatory="true" max_length="50" name="task_name" type="string"/>
+    </element>
+</database>
